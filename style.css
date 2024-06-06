@@ -1,0 +1,501 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'ubuntu', sans-serif;
+}
+
+
+
+
+
+.loginpage {
+	background: url(img/0bg.png) no-repeat;
+	background-size: cover;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+section{
+	
+}
+
+.ahlan{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 8%;
+}
+.ahlan h1 {
+	font-size: 48px;
+}
+.ahlan h2 {
+	font-size: 86px;
+}
+.ahlan h3 {
+	font-size: 18px;
+}
+
+.klogin {
+	margin-top: 20px;
+	background-color: darkblue;
+	background-position: center;
+	padding: 12px 10px;
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	width: 260px;
+	border-radius: 8px;
+}
+
+.klogin h3 {
+	padding: 5px;
+	background-color: darkgoldenrod;
+	color: white;
+	display: inline;
+	text-align: center;
+	border-radius: 4px;
+	margin-bottom: -5px;
+	margin-top: 5px;
+}
+
+.klogin i {
+	background-color: aquamarine;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+.klogin form {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.klogin button {
+	width: 50%;
+	align-items: center;
+	margin: auto;
+}
+
+/*cetak*/
+.contain {
+	width: 100%;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: url(img/0bg.png) no-repeat;
+	background-size: cover;
+	align-items: center;
+}
+
+.cetak {
+	margin-top: 20px;
+	align-items: center;
+}
+
+.cetak .tabel {
+	width: 150px;
+	display: flex;
+}
+
+.cetak h1 {
+	text-align: center;
+}
+
+
+/*dashboard*/
+
+.container {
+	width: 100%;
+	position: fixed;
+	display: flex;
+	min-height: 100vh;
+	background: url(img/0bg.png) no-repeat;
+	background-size: cover;
+}
+
+.kontener {
+	width: 100%;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: url(img/0bg.png) no-repeat;
+	background-size: cover;
+}
+
+.head {
+	background-color: darkblue;
+	display: flex;
+	flex-direction: row;
+	top: 0;
+	position:;
+	max-height: 150px;
+}
+
+.head .logo img{
+	width: 100px;
+}
+
+
+.head .yayasan {
+	vertical-align: middle;
+	margin: auto;
+	left: 0;
+	margin-left: 0px;
+}
+.head .yayasan h1 {
+	color: white;
+	font-size: 20px;
+}
+
+.head .yayasan h2 {
+	color: white;
+	font-size: 12px;
+}
+
+.head .tloginn h1{
+	position: fixed;
+	font-size: 12px;
+	padding: 12px 10px;
+	display: flex;
+	background-color: darkgoldenrod;
+	color: white;
+	right: 0;
+	margin-top: .5%;
+	margin-right: 10px;
+	border-radius: 4px;
+}
+
+.tombolbalik {
+	align-items: center;
+}
+.tombolbalik h3{
+	box-sizing: border-box;
+	padding: 12px 10px;
+}
+
+.main {
+/*	background-color: aquamarine;*/
+	flex-grow: 1;
+}
+
+.main h1 {
+	margin-top: 20px;
+	background-color: lightcyan;
+	text-align: center;
+}
+
+/*menu*/
+.menu {
+	background-color: darkblue;
+	width: 260px;
+	padding: 24px;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	transition: all ease-in-out .3s;
+}
+
+.menu.hide {
+	padding: 0;
+	width: 0%;
+	transition: all ease-in-out .3s;
+}
+
+.menu .header {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: white;
+}
+
+.menu.hide .header {
+	display: none;
+}
+
+.menu .header span{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 12px 10px;
+	border-radius: 8px;
+/*	background-color: darkgray;*/
+	box-sizing: border-box;
+
+}
+
+.menu .header img{
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.menu .listmenu {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: white;	
+}
+
+.menu.hide .listmenu{
+	display: none;
+}
+
+.menu ul a {
+	display: flex;
+	flex-direction: row;
+	color: white;
+	padding: 16px 10px;
+	box-sizing: border-box;
+	border-top: 1px solid lightblue;
+	border-bottom: 1px solid black;
+	align-items: center;
+	
+	transition: all ease-in .2;
+}
+
+.menu ul a span{
+	margin-left: 10px;
+}
+
+.menu ul a:hover{
+	background: darkgoldenrod;
+	transition: all ease-in .2;
+	border-radius: 8px;
+}
+
+
+.menu .blogout {
+	display: flex;
+	margin-top: 60px;
+	margin: auto;
+}
+
+.menu.hide .blogout {
+	display: none;
+}
+.menu .blogout:hover {
+	
+}
+
+/*tombol menu*/
+#menubutton{
+	margin-top: 30px;
+	width: 32px;
+/*	background-color: darkgoldenrod;*/
+	position: absolute;
+	overflow: hidden;
+}
+
+#menulabel {
+	position: relative;
+	display: block;
+	height: 20px;
+	cursor: pointer;
+}
+
+#menucheck {
+	display: none;
+}
+
+#sandwich, #menulabel:after, #menulabel:before {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background-color: black;
+}
+
+#menulabel:after, #menulabel:before {
+	content: "";
+	transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) left;
+}
+
+#menulabel:before {
+	top: 0;
+}
+
+#menulabel:after {
+	top: 8px;
+}
+
+#sandwich {
+	top: 16px;
+}
+
+#sandwich:before {
+	content: "MENU";
+	position: absolute;
+	top: 5px;
+	right: 0;
+	left: 0;
+	color: black;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#menucheck:checked + #menulabel:before {
+	left: -39px;	
+}
+
+#menucheck:checked + #menulabel:after {
+	left: 39px;
+}
+
+#menucheck:checked + #menulabel #sandwich:before {
+	animation: moveUpThenDown 0.8s ease 0.2s forwards,
+	shakeUp 0.8s ease 0.2s forwards,
+	shakeDown 0.8s ease 0.2s forwards;
+}
+
+@keyframes moveUpThenDown {
+	0%{
+		top: 0;
+	}
+	50% {
+		top: -27px;
+	}
+	100% {
+		top: -14px;
+	}
+}
+
+@keyframes shakeUP {
+	0% {
+		transform: rotateZ(0);
+	}
+	25% {
+		transform: rotateZ(-10deg);
+	}
+	50% {
+		transform: rotateZ(0);
+	}
+	75% {
+		transform: rotateZ(10deg);
+	}
+	100% {
+		transform: rotateZ(0);
+	}
+}
+
+@keyframes shakeDown {
+	0% {
+		transform: rotateZ(0);
+	}
+	80% {
+		transform: rotateZ(3deg);
+	}
+	90% {
+		transform: rotateZ(3deg);
+	}
+	100% {
+		transform: rotateZ(0);
+	}
+}
+
+
+/*data santri*/
+.main .add a{
+	color: white;
+	background-color: black;
+	padding: 5px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-left: 20px;
+}
+
+.main .cari {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.main .cari h3 {
+	font-size: 12px;
+}
+
+
+
+/*tabel*/
+.main .tabel {
+	display: flex;
+	width: 90%;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+/*tabel*/
+
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-left: 20px;
+}
+
+th,td {
+	padding: 7px 10px 10px 10px;
+}
+
+th {
+	border-top: 1px solid darkblue;
+	border-bottom: 2px solid darkgoldenrod;
+	font-size: 80%;
+	background-color: lightblue;
+	position: sticky;
+	top: 0px;
+}
+
+td {
+	border-bottom: 1px solid lightblue;
+}
+
+
+
+
+/*form tambah dan ubah*/
+.main .tambah ul li {
+	padding: 10px 12px;
+	
+}
+
+
+/*footer*/
+.footer {
+	background-color: black;
+	text-align: center;
+	width: 100%;
+	height: 4%;
+	bottom: 0;
+	position: fixed;
+
+}
+
+.footer h3 {
+	font-size: 16px;
+	color: white;
+	margin-top: 5px;
+	font-weight: 100;
+	font-style: italic;
+}
+
+
+@media screen and (max-width: 922px) {
+	.main, .tabel {
+		width: 100%;
+	}
+
+	.yayasan {
+		width: 50%;
+	}
+
+}
